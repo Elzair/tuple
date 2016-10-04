@@ -8,3 +8,5 @@ target_include_directories(boost_tuple BEFORE INTERFACE ${CMAKE_CURRENT_SOURCE_D
 
 install(TARGETS boost_tuple DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::tuple ALIAS boost_tuple)
